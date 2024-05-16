@@ -1,0 +1,16 @@
+.container {
+    margin-top: 70px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+form {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+button {
+    margin-right: 20px;
+}

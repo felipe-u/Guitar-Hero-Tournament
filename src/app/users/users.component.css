@@ -1,0 +1,32 @@
+.container {
+    margin-top: 30px;
+}
+
+.list-group-item {
+    margin-bottom: 20px;
+    padding: 0;
+    color: whitesmoke;
+}
+
+#panel {
+    display: flex;
+    background-color: #262626;
+}
+
+#panel-img {
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-right: 50px;
+}
+
+img {
+    width: 150px;
+}
+
+#panel-delete {
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin-left: 300px;
+}

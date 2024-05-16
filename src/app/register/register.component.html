@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form (ngSubmit)="onSubmit()" #f="ngForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" ngModel required #name="ngModel">
+                    <span class="help-block" *ngIf="!name.valid && name.touched">Please enter a name</span>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" name="gender" id="gender" ngModel required #gender="ngModel">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="help-block" *ngIf="!gender.valid && gender.touched">Please enter a gender</span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" name="age" id="age" ngModel required #age="ngModel">
+                    <span class="help-block" *ngIf="!age.valid && age.touched">Please enter a valid age</span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Music taste</label>
+                    <input type="text" class="form-control" name="taste" id="taste" ngModel required #taste="ngModel">
+                    <span class="help-block" *ngIf="!taste.valid && taste.touched">Please enter your favorite music kind</span>
+                </div>
+                <hr>
+                <button class="btn btn-default" type="submit" [disabled]="!f.valid">Submit</button>
+                <button class="btn btn-default" type="button" (click)="onCancel()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+</div>

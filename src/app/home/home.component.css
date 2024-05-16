@@ -1,0 +1,41 @@
+#options {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+#left-option, #right-option {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 5s ease;
+}
+
+#left-option:hover, #right-option:hover {
+    background-color: #a9a9a9;
+}
+
+.img-container-registry {
+    width: 220px;
+    height: 90px;
+    background-image: url("https://fontmeme.com/permalink/240505/c78eae2b766b48260d4c040612fdfbb9.png");
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+.img-container-registry:hover {
+    background-image: url("https://fontmeme.com/permalink/240505/4c1326a26fd79ea5472c50c6e433f4e7.png");
+}
+
+.img-container-users {
+    width: 200px;
+    height: 80px;
+    background-image: url("https://fontmeme.com/permalink/240505/b40df1f152087ee8c24903c9cc3c387d.png");
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+.img-container-users:hover {
+    background-image: url("https://fontmeme.com/permalink/240505/45b1e7e909ab9533c6abea4c3770b866.png");
+}

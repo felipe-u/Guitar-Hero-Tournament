@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let user of users">
+                <div id="panel">
+                    <div id="panel-img">
+                        <img src="https://i.pinimg.com/736x/54/72/d1/5472d1b09d3d724228109d381d617326.jpg" alt="nice photo" class="img-responsive">
+                    </div>
+                    <div>
+                        <h3>{{ user.name }}</h3>
+                        <p>Age: {{ user.age }}</p>
+                        <p>Favorite kind of music: {{ user.taste }}</p>
+                    </div>
+                    <div id="panel-delete">
+                        <button class="btn btn-default" (click)="onDelete(user)">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <button class="btn btn-default" (click)="goBack()">Go back</button>
+    </div>
+</div>
