@@ -11,8 +11,8 @@ const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'auth', component: AuthComponent},
     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'registry', component: RegisterComponent },
-    { path: 'users', component: UsersComponent },
+    { path: 'registry', component: RegisterComponent, canActivate: [AuthGuard] },
+    { path: 'users', component: UsersComponent, canActivate: [AuthGuard] },
     { path: 'not-found', component: NotFoundComponent },
     { path: '**', redirectTo: '/not-found' }
 ]
